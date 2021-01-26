@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style0.css" />
+    <title>Connexion et inscription</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" >
+            <h2 class="title">Connexion</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Nom de l'utilisateur" id="mailc" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Mot de passe de l'utilisateur" id="mdpc" required/>
+            </div>
+            <input type="submit" value="Se connecter" class="btn solid" id="btn1"/>
+            <p class="social-text">Ou connecter avec les comptes des réseaux sociaux.</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" id="inscrireform" class="sign-up-form">
+            <h2 class="title">Inscription</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Nom de l'utilisateur" id="nom"  />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email de l'utilisateur"id="mail" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Mot de passe" id="mdp" required/>
+            </div>
+            <input type="submit" class="btn" value="S'inscrire" id="btn"/>
+            <p class="social-text">Ou inscrire avec les comptes des réseaux sociaux</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Nouveau ici?</h3>
+            <p>
+              La platform LAMOS offre une meilleure expérience,<br>
+              rejoignez nous.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              let's go
+            </button>
+          </div>
+          <img src="images/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Parmi nous ?</h3>
+            <p>
+                La platform LAMOS offre une meilleure expérience,<br>
+                rejoignez nous.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              S'authentifier
+            </button>
+          </div>
+          <img src="images/register.svg" class="image" alt="" />
+        </div>
+      </div>
+
+      <script src="app.js"></script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCAbj_XoBZlmGkdZ2BoVNdM9alME_vgH4M",
+    authDomain: "projet-c53ca.firebaseapp.com",
+    databaseURL: "https://projet-c53ca-default-rtdb.firebaseio.com",
+    projectId: "projet-c53ca",
+    storageBucket: "projet-c53ca.appspot.com",
+    messagingSenderId: "1057490269533",
+    appId: "1:1057490269533:web:81c872663fd45bd214e4b4",
+    measurementId: "G-G5TLYXCGR7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  firebase.auth.Auth.Persistance.LOCAL;
+</script>
+
+
+<script src="connection.js"></script>
+
+</script>
+  </body>
+  <div class="bubbles">
+    <img src="images/bubble.png">
+    <img src="images/bubble.png">
+    <img src="images/bubble.png">
+    <img src="images/bubble.png">
+    <img src="images/bubble.png">
+    <img src="images/bubble.png">
+    <img src="images/bubble.png">
+  </div>
+</div>
+</html>
